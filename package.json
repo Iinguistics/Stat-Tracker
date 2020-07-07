@@ -1,0 +1,26 @@
+{
+  "name": "overwatch-tracker",
+  "version": "1.0.0",
+  "description": "overwatch stats tracker app",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "server": "nodemon server",
+    "client": "npm run serve --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "James Goytia",
+  "license": "MIT",
+  "dependencies": {
+    "call-of-duty-api": "^1.1.8",
+    "concurrently": "^5.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "morgan": "^1.9.1",
+    "node-fetch": "^2.6.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
